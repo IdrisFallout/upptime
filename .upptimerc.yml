@@ -1,36 +1,32 @@
-# Change these first
-owner: IdrisFallout # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Basic configuration
+owner: IdrisFallout # Your GitHub organization or username
+repo: upptime # The name of your repository
 
+# Sites to monitor
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
-    check: "tcp-ping"
-    ipv6: true
+  - name: Website
+    url: https://waithakasam.com
+  - name: GeminiAIChatBot
+    url: https://chat.waithakasam.com
+  - name: Swila
+    url: https://swila.waithakasam.com
 
+# Status website settings
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: status.waithakasam.com
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.waithakasam.com # Custom domain for the status page
+  # baseUrl: /upptime # Uncomment if not using a custom domain
+  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg # You can replace this with your own logo
+  name: IdrisFallout Status # Custom name for your status page
+  introTitle: "Welcome to the **IdrisFallout** Status Page" # Custom introduction title
+  introMessage: |
+    Here you can find the current status and uptime of our services.
+    We monitor the uptime of our websites using **Upptime**. Real-time data is pulled directly from our [GitHub repository](https://github.com/IdrisFallout/upptime).
+    **No server required** — just GitHub Actions, Issues, and Pages.
   navbar:
     - title: Status
       href: /
     - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+      href: https://github.com/IdrisFallout/upptime # Link to your GitHub repository
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+# Optional configurations (notifications, issues, etc.)
+# See https://upptime.js.org/docs/configuration for more details
